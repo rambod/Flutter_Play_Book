@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_play_book/pages/sqlite/sqlite_page.dart';
 
 class HomePage extends StatefulWidget {
   String title = '';
@@ -14,9 +15,16 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(widget.title), backgroundColor: Colors.amber),
-      body: const SafeArea(
+      body:  SafeArea(
         child: Center(
-          child: Text("Welcome to My Flutter Playbook"),
+          child: Column(
+            children: [
+              Text("Welcome to My Flutter Playbook"),
+              ElevatedButton(onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SqlitePage()));
+              }, child: Text("Sqlite"))
+            ],
+          ),
         ),
       ),
     );

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_play_book/pages/homepage.dart';
+import 'package:flutter_play_book/pages/home_page.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -13,11 +14,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter PlayBook',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+
       ),
-      home: HomePage(title: 'Flutter Demo Home Page'),
+      home: HomePage(title: 'Flutter PlayBook'),
     );
   }
 }
