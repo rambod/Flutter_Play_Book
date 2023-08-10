@@ -1,0 +1,35 @@
+{
+    "name": "flutter_play_book",
+    "short_name": "flutter_play_book",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "Welcome to FlutterPlayBook, an open playground for exploring the vast world of Flutter! This repository is a learning hub where you can experiment with different Flutter behaviors, UI components, state management techniques, and more. Whether you're a beginner or an experienced developer, FlutterPlayBook is designed to help you sharpen your skills, collaborate with others, and contribute to the Flutter community. Feel free to dive in, experiment, and share your insights!",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
