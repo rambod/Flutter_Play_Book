@@ -3,6 +3,7 @@ import 'package:flutter_play_book/pages/home_page.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  // Release Mode
   runApp(const MyApp());
 }
 
