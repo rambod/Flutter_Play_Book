@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_play_book/sqlite/sqlite_page.dart';
+import 'package:flutter_play_book/sqlite/crud/sqlite_page.dart';
 
 class HomePage extends StatefulWidget {
   String title = '';

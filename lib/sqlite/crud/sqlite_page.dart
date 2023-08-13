@@ -5,6 +5,8 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 
+import '../pre_load_sql/pre_load_sql_page.dart';
+
 class SqlitePage extends StatefulWidget {
   const SqlitePage({super.key});
 
@@ -26,6 +28,9 @@ class _SqlitePageState extends State<SqlitePage> {
             child: Column(
               children: [
                 Text("Sqlit testing area"),
+                ElevatedButton(onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => PreLoadSQLPage()));
+                }, child: Text("Preload SQLite Page")),
                 TextField(
                   decoration: InputDecoration(
                       labelText: "Enter text",
